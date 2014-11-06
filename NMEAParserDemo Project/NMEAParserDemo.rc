@@ -1,0 +1,334 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NMEAParserDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NMEAParserDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NMEAParserDemo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NMEAParserDemo Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002 Monte Variakojis",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_NMEAPARSERDEMO_DIALOG DIALOGEX 0, 0, 455, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NMEAParserDemo"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,398,265,50,14
+    LTEXT           "GGA Latitude:",IDC_STATIC,7,11,46,8
+    LTEXT           "GGA Longitude:",IDC_STATIC,7,21,52,8
+    LTEXT           "IDC_LAT",IDC_LAT,108,11,89,8
+    LTEXT           "IDC_LON",IDC_LON,108,21,89,8
+    LTEXT           "NMEA Sentences received:",IDC_STATIC,220,11,89,8
+    LTEXT           "IDC_NMEA_RX_COUNT",IDC_NMEA_RX_COUNT,318,11,76,8
+    PUSHBUTTON      "Reset Data",IDC_RESET_DATA,398,242,50,14
+    LTEXT           "GGA Altitude:",IDC_STATIC,7,31,44,8
+    LTEXT           "IDC_ALT",IDC_ALT,108,31,89,8
+    LTEXT           "GGA GPS Quality:",IDC_STATIC,7,41,58,8
+    LTEXT           "IDC_GPS_QUAL",IDC_GPS_QUAL,108,41,89,8
+    LTEXT           "GSA VDOP:",IDC_STATIC,7,71,40,8
+    LTEXT           "GSA HDOP:",IDC_STATIC,7,81,40,8
+    LTEXT           "GSA PDOP:",IDC_STATIC,7,91,40,8
+    LTEXT           "IDC_VDOP",IDC_VDOP,108,71,89,8
+    LTEXT           "IDC_HDOP",IDC_HDOP,108,81,89,8
+    LTEXT           "IDC_PDOP",IDC_PDOP,108,91,89,8
+    LTEXT           "GSA Satellites used in solution:",IDC_STATIC,7,101,98,8
+    LTEXT           "IDC_SATS_USED_IN_SOL",IDC_SATS_USED_IN_SOL,108,101,210,8
+    LTEXT           "PRN:",IDC_STATIC,7,131,18,8
+    LTEXT           "SNR:",IDC_STATIC,7,141,18,8
+    LTEXT           "Azimuth:",IDC_STATIC,7,151,28,8
+    LTEXT           "Elevation:",IDC_STATIC,7,161,32,8
+    LTEXT           "IDC_GSV_PRN",IDC_GSV_PRN,42,131,406,8
+    LTEXT           "IDC_GSV_SNR",IDC_GSV_SNR,42,141,406,8
+    LTEXT           "IDC_GSV_AZ",IDC_GSV_AZ,42,151,406,8
+    LTEXT           "IDC_GSV_ELV",IDC_GSV_ELV,42,161,406,8
+    LTEXT           "Satellites in view:",IDC_STATIC,7,121,55,8
+    LTEXT           "IDC_SATS_IN_VIEW",IDC_SATS_IN_VIEW,108,121,89,8
+    PUSHBUTTON      "Setup Comm",IDC_SET_COMM,398,219,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,114,441,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,175,441,1
+    LTEXT           "GSA Fix Mode:",IDC_STATIC,7,61,48,8
+    LTEXT           "IDC_GSA_FIX_MODE",IDC_GSA_FIX_MODE,108,61,89,8
+    CTEXT           "IDC_GSA_MODE",IDC_GSA_MODE,63,61,36,8
+    LTEXT           "GGA Speed:",IDC_STATIC,220,27,52,8
+    LTEXT           "IDC_ALT",IDC_SPEED,264,27,89,8
+END
+
+IDD_COMM_SETTINGS DIALOG 0, 0, 119, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_PORT,30,9,82,118,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BAUD,30,29,82,99,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,7,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,62,54,50,14
+    LTEXT           "Port:",IDC_STATIC,7,11,16,8
+    LTEXT           "Baud:",IDC_STATIC,7,31,20,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "NMEAParserDemo MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "NMEAParserDemo"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "NMEAParserDemo.EXE"
+            VALUE "ProductName", "NMEAParserDemo Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NMEAPARSERDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 448
+        VERTGUIDE, 42
+        VERTGUIDE, 108
+        VERTGUIDE, 197
+        VERTGUIDE, 220
+        VERTGUIDE, 318
+        VERTGUIDE, 394
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+        HORZGUIDE, 15
+        HORZGUIDE, 25
+        HORZGUIDE, 35
+        HORZGUIDE, 45
+        HORZGUIDE, 65
+        HORZGUIDE, 75
+        HORZGUIDE, 85
+        HORZGUIDE, 95
+        HORZGUIDE, 105
+        HORZGUIDE, 115
+        HORZGUIDE, 125
+        HORZGUIDE, 135
+        HORZGUIDE, 145
+        HORZGUIDE, 155
+        HORZGUIDE, 165
+        HORZGUIDE, 175
+        HORZGUIDE, 185
+        HORZGUIDE, 195
+    END
+
+    IDD_COMM_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        VERTGUIDE, 30
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+        HORZGUIDE, 15
+        HORZGUIDE, 35
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMM_SETTINGS DLGINIT
+BEGIN
+    IDC_PORT, 0x403, 2, 0
+0x0031, 
+    IDC_PORT, 0x403, 2, 0
+0x0032, 
+    IDC_PORT, 0x403, 2, 0
+0x0033, 
+    IDC_PORT, 0x403, 2, 0
+0x0034, 
+    IDC_PORT, 0x403, 2, 0
+0x0035, 
+    IDC_PORT, 0x403, 2, 0
+0x0036, 
+    IDC_PORT, 0x403, 2, 0
+0x0037, 
+    IDC_PORT, 0x403, 2, 0
+0x0038, 
+    IDC_PORT, 0x403, 2, 0
+0x0039, 
+    IDC_PORT, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_PORT, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_PORT, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_PORT, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_PORT, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_PORT, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_PORT, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_BAUD, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BAUD, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BAUD, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_BAUD, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_BAUD, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About NMEAParserDemo..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NMEAParserDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

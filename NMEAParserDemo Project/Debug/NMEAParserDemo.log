@@ -1,0 +1,39 @@
+﻿Build started 4/4/2014 9:02:54 AM.
+     1>Project "C:\Users\aseidel\Downloads\NMEAParserDemo Project\NMEAParserDemo.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\NMEAParserDemo.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\NMEAParserDemo.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CommSettingsDlg.cpp NMEAParserDemo.cpp NMEAParserDemoDlg.cpp
+         NMEAParserDemoDlg.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         NMEAParserDemo.cpp
+         CommSettingsDlg.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0409" /nologo /fo".\Debug\NMEAParserDemo.res" NMEAParserDemo.rc 
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\NMEAParserDemo.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:".\Debug\NMEAParserDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\aseidel\Downloads\NMEAParserDemo Project\Debug\NMEAParserDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\NMEAParserDemo.lib" /MACHINE:X86 .\Debug\NMEAParserDemo.res
+         .\Debug\NMEAParserDemo.exe.embed.manifest.res
+         .\Debug\CommSettingsDlg.obj
+         .\Debug\NMEAParser.obj
+         .\Debug\NMEAParserDemo.obj
+         .\Debug\NMEAParserDemoDlg.obj
+         .\Debug\Sio.obj
+         .\Debug\StdAfx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\NMEAParserDemo.exe.embed.manifest" /manifest .\Debug\NMEAParserDemo.exe.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         NMEAParserDemo.vcxproj -> C:\Users\aseidel\Downloads\NMEAParserDemo Project\.\Debug\NMEAParserDemo.exe
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\NMEAParserDemo.unsuccessfulbuild".
+         Touching ".\Debug\NMEAParserDemo.lastbuildstate".
+     1>Done Building Project "C:\Users\aseidel\Downloads\NMEAParserDemo Project\NMEAParserDemo.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.30
